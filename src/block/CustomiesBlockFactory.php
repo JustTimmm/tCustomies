@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace tcustomies\block;
+namespace tCustomies\block;
 
 use Closure;
-use tcustomies\block\permutations\Permutable;
-use tcustomies\block\permutations\Permutation;
-use tcustomies\block\permutations\Permutations;
-use tcustomies\item\CreativeInventoryInfo;
-use tcustomies\item\CustomiesItemFactory;
-use tcustomies\task\AsyncRegisterBlocksTask;
-use tcustomies\util\NBT;
+use tCustomies\block\permutations\Permutable;
+use tCustomies\block\permutations\Permutation;
+use tCustomies\block\permutations\Permutations;
+use tCustomies\item\CreativeInventoryInfo;
+use tCustomies\item\CustomiesItemFactory;
+use tCustomies\task\AsyncRegisterBlocksTask;
+use tCustomies\util\NBT;
 use InvalidArgumentException;
 use pocketmine\block\Block;
 use pocketmine\block\RuntimeBlockStateRegistry;

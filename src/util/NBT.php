@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace tcustomies\util;
+namespace tCustomies\util;
 
 use pocketmine\nbt\tag\ByteTag;
 use pocketmine\nbt\tag\CompoundTag;

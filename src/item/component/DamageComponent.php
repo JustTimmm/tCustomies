@@ -1,6 +1,6 @@
 <?php
 
-namespace tcustomies\item\component;
+namespace tCustomies\item\component;
 
 class DamageComponent implements ItemComponent {
 

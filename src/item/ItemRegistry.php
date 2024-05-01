@@ -1,6 +1,6 @@
 <?php
 
-namespace tcustomies\item;
+namespace tCustomies\item;
 
 use pocketmine\utils\SingletonTrait;
 

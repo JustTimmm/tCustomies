@@ -1,8 +1,8 @@
 <?php
 
-namespace tcustomies\block;
+namespace tCustomies\block;
 
-use tcustomies\item\CreativeInventoryInfo;
+use tCustomies\item\CreativeInventoryInfo;
 use pocketmine\math\Vector3;
 use pocketmine\utils\SingletonTrait;
 

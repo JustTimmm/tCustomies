@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace tcustomies\item\component;
+namespace tCustomies\item\component;
 
 final class CooldownComponent implements ItemComponent {
 

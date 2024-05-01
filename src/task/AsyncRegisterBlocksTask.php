@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace tcustomies\task;
+namespace tCustomies\task;
 
-use tcustomies\block\CustomiesBlockFactory;
+use tCustomies\block\CustomiesBlockFactory;
 use pmmp\thread\ThreadSafeArray;
 use pocketmine\block\Block;
 use pocketmine\data\bedrock\block\convert\BlockStateReader;

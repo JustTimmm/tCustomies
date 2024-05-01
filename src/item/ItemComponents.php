@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace tcustomies\item;
+namespace tCustomies\item;
 
-use tcustomies\item\component\ItemComponent;
+use tCustomies\item\component\ItemComponent;
 use pocketmine\nbt\tag\CompoundTag;
 
 interface ItemComponents {

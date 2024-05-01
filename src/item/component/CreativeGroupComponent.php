@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace tcustomies\item\component;
+namespace tCustomies\item\component;
 
-use tcustomies\item\CreativeInventoryInfo;
+use tCustomies\item\CreativeInventoryInfo;
 
 final class CreativeGroupComponent implements ItemComponent {
 
