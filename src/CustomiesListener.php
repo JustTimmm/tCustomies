@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace customiesdevs\customies;
+namespace tcustomies;
 
-use customiesdevs\customies\block\CustomiesBlockFactory;
-use customiesdevs\customies\item\CustomiesItemFactory;
+use tcustomies\block\CustomiesBlockFactory;
+use tcustomies\item\CustomiesItemFactory;
 use pocketmine\event\Listener;
 use pocketmine\event\server\DataPacketSendEvent;
 use pocketmine\network\mcpe\protocol\BiomeDefinitionListPacket;

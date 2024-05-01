@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace customiesdevs\customies\item;
+namespace tcustomies\item;
 
-use customiesdevs\customies\item\component\ItemComponent;
+use tcustomies\item\component\ItemComponent;
 use pocketmine\nbt\tag\CompoundTag;
 
 interface ItemComponents {

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace customiesdevs\customies\item\component;
+namespace tcustomies\item\component;
 
 final class UseAnimationComponent implements ItemComponent {
 

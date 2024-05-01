@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace customiesdevs\customies\item;
+namespace tcustomies\item;
 
 use InvalidArgumentException;
 use pocketmine\block\Block;

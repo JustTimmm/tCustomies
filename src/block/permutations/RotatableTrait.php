@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace customiesdevs\customies\block\permutations;
+namespace tcustomies\block\permutations;
 
 use pocketmine\block\Block;
 use pocketmine\block\utils\HorizontalFacingTrait;

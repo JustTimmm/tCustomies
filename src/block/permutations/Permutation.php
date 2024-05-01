@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace customiesdevs\customies\block\permutations;
+namespace tcustomies\block\permutations;
 
-use customiesdevs\customies\util\NBT;
+use tcustomies\util\NBT;
 use pocketmine\nbt\tag\CompoundTag;
 
 final class Permutation {

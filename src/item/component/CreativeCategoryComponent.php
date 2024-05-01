@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace customiesdevs\customies\item\component;
+namespace tcustomies\item\component;
 
-use customiesdevs\customies\item\CreativeInventoryInfo;
+use tcustomies\item\CreativeInventoryInfo;
 
 final class CreativeCategoryComponent implements ItemComponent {
 

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace customiesdevs\customies\block\permutations;
+namespace tcustomies\block\permutations;
 
 use Exception;
 use function array_map;

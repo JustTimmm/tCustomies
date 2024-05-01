@@ -1,12 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace customiesdevs\customies;
+namespace tcustomies;
 
-use customiesdevs\customies\block\CustomiesBlockFactory;
+use tcustomies\block\CustomiesBlockFactory;
 use pocketmine\plugin\PluginBase;
 use pocketmine\scheduler\ClosureTask;
-
 final class Customies extends PluginBase {
 
 	protected function onEnable(): void {

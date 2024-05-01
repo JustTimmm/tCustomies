@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace customiesdevs\customies\item\component;
+namespace tcustomies\item\component;
 
 use pocketmine\block\Block;
 use pocketmine\world\format\io\GlobalBlockStateHandlers;

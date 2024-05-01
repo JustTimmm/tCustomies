@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace customiesdevs\customies\entity;
+namespace tcustomies\entity;
 
 use Closure;
 use pocketmine\entity\Entity;

@@ -1,6 +1,6 @@
 <?php
 
-namespace customiesdevs\customies\item;
+namespace tcustomies\item;
 
 final class CreativeInventoryInfo {
 
