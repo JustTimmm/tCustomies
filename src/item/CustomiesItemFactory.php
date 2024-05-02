@@ -66,32 +66,28 @@ final class CustomiesItemFactory {
 	 * item components if present.
 	 * @phpstan-param class-string $className
 	 */
-	public function registerItem(string $className, string $identifier, string $name): void {
-		if($className !== Item::class) {
-			Utils::testValidInstance($className, Item::class);
-		}
+    public function registerItem(Item $item, string $identifier): void {
+        $itemId = ItemTypeIds::newId();
+        $this->registerCustomItemMapping($identifier, $itemId);
 
-		$itemId = ItemTypeIds::newId();
-		$item = new $className(new ItemIdentifier($itemId), $name);
-		$this->registerCustomItemMapping($identifier, $itemId);
+        GlobalItemDataHandlers::getDeserializer()->map($identifier, fn() => clone $item);
+        GlobalItemDataHandlers::getSerializer()->map($item, fn() => new SavedItemData($identifier));
 
-		GlobalItemDataHandlers::getDeserializer()->map($identifier, fn() => clone $item);
-		GlobalItemDataHandlers::getSerializer()->map($item, fn() => new SavedItemData($identifier));
+        StringToItemParser::getInstance()->register($identifier, fn() => clone $item);
+        StringToItemParser::getInstance()->override(str_replace("minecraft:", "", $identifier), fn() => clone $item);
 
-		StringToItemParser::getInstance()->register($identifier, fn() => clone $item);
+        if(($componentBased = $item instanceof ItemComponents)) {
+            $this->itemComponentEntries[$identifier] = new ItemComponentPacketEntry($identifier,
+                new CacheableNbt($item->getComponents()
+                    ->setInt("id", $itemId)
+                    ->setString("name", $item->getName())
+                )
+            );
+        }
 
-		if(($componentBased = $item instanceof ItemComponents)) {
-			$this->itemComponentEntries[$identifier] = new ItemComponentPacketEntry($identifier,
-				new CacheableNbt($item->getComponents()
-					->setInt("id", $itemId)
-					->setString("name", $identifier)
-				)
-			);
-		}
-
-		$this->itemTableEntries[$identifier] = new ItemTypeEntry($identifier, $itemId, $componentBased);
-		CreativeInventory::getInstance()->add($item);
-	}
+        $this->itemTableEntries[$identifier] = new ItemTypeEntry($identifier, $itemId, $componentBased);
+        CreativeInventory::getInstance()->add($item);
+    }
 
 	/**
 	 * Registers a custom item ID to the required mappings in the global ItemTypeDictionary instance.
